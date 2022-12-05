@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+
+/* Declare Global CSS Variables using :root CSS pseudo-class*/
+:root {
+    --Light-Cyan: #e0ffff;
+    --Medium-Green: #2AD495;
+    --Gray-Blue: #7393B3;
+    --Dark-Gray-Blue: #424952;
+    --Dark: #1F2632;
+    --Quote-Font-Size: 28px;
+    --Font-Regular: 400;
+    --Font-Bold: 700;
+    --Font-Extra-Bold: 800;
+    --Font-Family: 'Manrope', sans-serif;
+
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* CSS Selectors */
+body {
+    color: var(--Light-Cyan);
+    font-family: var(--Font-Family);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+main {
+    align-items: center;
+    background-color: var(--Dark);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    padding: 15px 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+ul {
+    margin-top: -70px;
+}
+
+button img {
+    vertical-align: middle;
+}
+
+/* Navigation */
+
+#logo {
+    width: 200px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(42,212,149, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.nav-link {
+    color: var(--Medium-Green);
+    font-weight: var(--Font-Regular);
+}
+
+.navbar-toggler {
+    border-color: var(--Medium-Green);
+}
+
+/* Advice Card */
+.card {
+    align-items: center;
+    background-color: var(--Dark-Gray-Blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    max-height: fit-content;
+    max-width: 600px;
+    padding: 30px 40px;
+    position: relative;
+    width: 100%;
+}
+
+.card-header {
+    border: none;
+    padding: 10px 0;
+}
+
+.card-header-title {
+    color: var(--Medium-Green);
+    font-size: 18px;
+    font-weight: var(--Font-Bold);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card-body {
+    color: var(--Light-Cyan);
+    flex: 0 1 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.card-text {
+    font-size: var(--Quote-Font-Size);
+    font-weight: var(--Font-Extra-Bold);
+}
+
+.card-image {
+    padding: 20px 0;
+}
+
+.card-footer {
+    border: none;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.card-footer-btn {
+    align-items: center;
+    background-color: var(--Medium-Green);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: -30px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    right: 44%;
+    transition: all 0.3s ease-in;
+    width: 60px;
+}
+
+.card-footer-btn:hover {
+    box-shadow: 0px 2px 20px 1px var(--Medium-Green);
+}
+
+
+/* Footer */
+#footer {
+    bottom: 0;
+    color: var(--Medium-Green);
+    height: 100px;
+    padding: 35px;
+    position: fixed;
+    width: 100%;
+}
+
+.copyright {
+    margin-top: -65px;
+}
+
+.icons {
+    color: var(--Medium-Green);
+}
+
+
+
+/* Mobile First Media Query */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-footer-btn {
+        right: 39%;
+    }
+}
