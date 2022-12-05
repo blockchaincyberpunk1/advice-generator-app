@@ -23,7 +23,7 @@ I was inspired by [Advice generator app challenge on Frontend Mentor](https://ww
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Pages](https://svolcov1.github.io/advice-generator-app/)
 
 ## My process
 
